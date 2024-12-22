@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: pink;
+    font-family: Arial, sans-serif;
+}
+
+#hearts {
+    position: relative;
+    height: 100vh;
+}
+
+.heart {
+    position: absolute;
+    font-size: 30px;
+    color: red;
+    animation: fall 5s linear forwards;
+}
+
+@keyframes fall {
+    0% { top: -50px; }
+    100% { top: 100%; }
+}
+
+#message {
+    display: none;
+    font-size: 50px;
+    color: red;
+    text-align: center;
+    margin-top: 20%;
+}
+
+#dino {
+    display: none;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 100px;
+}
+
+#loveYou {
+    display: none;
+    font-size: 50px;
+    color: red;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.balloon {
+    position: absolute;
+    bottom: 0;
+    animation: float 5s infinite;
+}
+
+@keyframes float {
+    0% { bottom: 0; }
+    100% { bottom: 100%; }
+}
